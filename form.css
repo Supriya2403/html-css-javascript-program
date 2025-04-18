@@ -1,0 +1,15 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+hmtl,body{
+    align-items: center;
+    justify-content: center;
+    row-gap: 2px;
+    background-color:papayawhip;
+}
+h1{
+text-align: center;
+
+}
