@@ -1,31 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORM</title>
-    <link rel="stylesheet" href="form.css">
-</head>
-<body>
-    <h1>Application Form</h1>
-    <h2>Name:</h2>
-    <h2> Father's Name:</h2>
-    <h2>Mother's  Name:</h2>
-    <h2>DOB:</h2>
-     <h2>Gender:</h2>
-     <h2>Course Name:</h2>
-      <h2>Marks:</h2>
-     <h2>Applied for Which Course:</h2>
-     <h2>Mobile No:</h2>
-
-
-     <h2>Email address:</h2>
-
-
-
-
-
-
-
-</body>
-</html>
+    <html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <form id=" Student Form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email id">Email Id:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="date of birth">Date Of Birth:</label>
+            <input type="date of birth" id="name" name="date of birth"><br><br>
+            <label for="address">Address:</label><br>
+            <input type="address" id="name" name="address"><br><br>
+            <label for="age">Age:</label><br>
+              <input type="age" id="age" name="age"><br><br>
+           <label for="phone no"> Phone Number:</label><br>
+              <input type="phone no" id="phoneno" name="phoneno"><br><br>
+             <button type ="submit">Submit</button>
+</form>
+<script>
+            const form = document.getElementById('Form');
+     form.addEventListener('submit', function(event) {
+                event.preventDefault(); 
+              const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const dateofbirth = document.getElementById('date of birth').value;
+                const address = document.getElementById('address').value;
+                const age= document.getElementById('age').value;
+const phoneno = document.getElementById('phoneno').value;
+ if (name === '' || email === '') {
+                    alert('Please fill in all fields');
+                    return;
+                }
+                console.log('Name:', name, 'Email:', email ,'dateofbirth',dateofbirth,'address',address,'age',age,'phoneno',phoneno);
+                alert('Form submitted successfully!');
+     </script>
+    </body>
+    </html>
